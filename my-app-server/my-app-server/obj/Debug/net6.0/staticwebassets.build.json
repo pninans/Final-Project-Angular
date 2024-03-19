@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "up7n/Rfw3A7PwLPI+p8SWDSzwd7hLM8VL2zzPmx3vgs=",
+  "Source": "my-app-server",
+  "BasePath": "_content/my-app-server",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

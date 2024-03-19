@@ -1,0 +1,51 @@
+
+<div class="container">
+  <h1 class="text-center mb-4">Courses</h1>
+
+  <div class="search-container mb-4">
+    <div class="row">
+      <!-- Search by name -->
+      <div class="col-md-6 mb-2">
+        <mat-form-field appearance="fill" class="search-field">
+          <mat-label>Search by name</mat-label>
+          <input matInput type="text" placeholder="Search..." [(ngModel)]="searchText" (input)="handleSearch($event)">
+        </mat-form-field>
+      </div>
+  
+      <!-- Search by learning mode -->
+      <div class="col-md-6 mb-2">
+        <mat-form-field appearance="fill" class="search-field">
+          <mat-label>Search by learning mode</mat-label>
+          <input matInput type="text" placeholder="Search..." [(ngModel)]="searchText2" (input)="handleSearch2($event)">
+        </mat-form-field>
+      </div>
+    </div>
+  </div>
+  
+  
+
+   <!-- Search by category -->
+   <!-- <mat-form-field appearance="fill" class="search-field">
+    <mat-label>Search by category</mat-label>
+    <mat-select [(value)]="selectedCategory" (selectionChange)="handleCategoryChange($event)">
+      <mat-option *ngFor="let category of getUniqueCategories()" [value]="category.name">{{ category.name }}</mat-option>
+    </mat-select>
+  </mat-form-field> -->
+
+  <!-- Course cards -->
+  <div class="row">
+    <div class="col-md-4 mb-4" *ngFor="let course of filteredCourses">
+      <div>
+        <app-course-details [course]="course"></app-course-details>
+        <div class="card-body">
+       </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Add course button -->
+  <div class="text-center">
+    <br>
+    <button (click)="addCourseToList()" class="btn btn-success">Add Course</button>
+  </div>
+</div>

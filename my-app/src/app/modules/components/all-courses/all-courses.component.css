@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 20px; /* הוספת מרווח בין שדות החיפוש לרשימת הקורסים */
+  }
+  
+  .search-field {
+    margin-bottom: 10px; /* מרווח בין שדות החיפוש */
+  }
+  
