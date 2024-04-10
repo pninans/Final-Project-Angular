@@ -24,7 +24,7 @@ import { User } from './modules/models/user.model';
 export class AppComponent implements OnInit {
   title = 'my-app';
   currentImageSource: string | undefined;
-  images: string[] = ['assets/ultracode home3.PNG', 'assets/ultracode home4.PNG'];
+  images: string[] = ['assets/home1.png', 'assets/home4.png'];
   currentIndex: number = 0;
   userName:string;
   users:User[];

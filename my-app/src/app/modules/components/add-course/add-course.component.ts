@@ -121,6 +121,7 @@ export class AddCourseComponent {
         alert("save success");
       }
     });
+    this.router.navigate(['/allCourses']);
   }
   
   isValidCourse(course: Course): boolean {
